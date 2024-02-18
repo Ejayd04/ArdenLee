@@ -1,0 +1,247 @@
+/* Box Model Hack */
+* {
+     box-sizing: border-box;
+}
+
+/* Clear fix hack */
+.clearfix:after {
+     content: ".";
+     display: block;
+     clear: both;
+     visibility: hidden;
+     line-height: 0;
+     height: 0;
+}
+
+.clear {
+	clear: both;
+}
+
+/******************************************
+/* BASE STYLES
+/*******************************************/
+
+body {
+     font-family: 'TT Commons', sans-serif;
+     background: rgb(20,19,17);
+     color: rgb(250, 241, 231);
+}
+
+
+/******************************************
+/* LAYOUT
+/*******************************************/
+main {
+     position: relative;
+     overflow: hidden;
+     padding: 70px;
+     height: 40rem;
+     background-image: url("Main\ Section\ background.png");
+     background-repeat: no-repeat;
+     background-size: 100%;
+}
+.main-flex {
+     display: flex;
+     justify-content: space-between;
+}
+h1 {
+     font-family: 'The Seasons BI', sans-serif;
+     font-size: 193px;
+     text-align: center;
+     margin-top: 0;
+     padding-top: 0;
+     padding-bottom: 50px;
+}
+h2 {
+     font-family: 'The Seasons Italic', sans-serif;
+     font-size: 50px;
+     font-weight: lighter;
+}
+h3 {
+     font-family: 'The Seasons Reg', sans-serif;
+     font-size: 27px;
+     font-weight: lighter;
+}
+p, span {
+     font-size: 14px;
+     line-height: 1.5;
+     font-weight: lighter;
+}
+h4 {
+     font-family: 'The Seasons Reg', sans-serif;
+     font-size: 20px;
+     font-weight: lighter;
+}
+.main-flex a {
+     padding-left: 550px;
+     padding-top: 40px;
+}
+.about, footer {
+     overflow: hidden;
+     height: 40rem;
+     display: flex;
+     justify-content: space-between;
+     padding: 70px;
+}
+.about-me {
+     width: 40%;
+     padding-right: 230px;
+}
+.about-main img {
+     height: 350px;
+     width: 630px;
+}
+.about-p {
+     line-height: 1.5;
+     font-weight: lighter;
+     display: flex;
+     width: 630px;
+}
+.about-p div {
+     display: flex;
+     flex-direction: column;
+}
+.works {
+     overflow: hidden;
+     height: 40rem;
+     display: flex;
+     justify-content: space-between;
+}
+.works-text {
+     padding-top: 30px;
+     padding-right: 70px;
+     padding-left: 70px;
+}
+.works div {
+     padding-top: 100px;
+}
+.project-a {
+     overflow: hidden;
+     height: 40rem;
+     display: flex;
+     flex-flow: column;
+     padding: 50px;
+}
+.project-a div {
+     display: flex;
+     justify-content: space-between;
+}
+.project-a img {
+     height: 83%;
+}
+.project-a p {
+     line-height: 1.5;
+     padding-right: 700px;
+}
+.project-b, .project-c {
+     overflow: hidden;
+     height: 40rem;
+     display: flex;
+     justify-content: space-between; 
+     padding-left: 50px;
+     padding-right: 50px;
+}
+.project-b-small {
+     padding-top: 50px;
+}
+.project-b-big img {
+     width: 630px;
+     height: 700px;
+}
+.project-b-2 {
+     overflow: hidden;
+     height: 40rem;
+     display: flex;
+     flex-flow: row wrap;
+     justify-content: space-between;
+     padding: 50px;
+}
+.project-b-2 img {
+     height: 47%;
+}
+.sec5-img1 {
+     padding-right: 0;
+}
+.sec5-img2 {
+     padding-right: 300px;
+}
+.sec5-img3 {
+     padding-right: 210px;
+}
+.project-c-big img {
+     width: 550px;
+     height: 550px;
+}
+.project-c-small {
+     padding-top: 180px;
+}
+.project-c-small img {
+     width: 350px;
+     height: 200px;
+}
+.project-c-small p {
+     padding-bottom: 70px;
+}
+.final {
+     position: relative;
+     overflow: hidden;
+     padding: 70px;
+     height: 40rem;
+     background-image: url("final\ section\ background.png");
+     background-repeat: no-repeat;
+     background-size: 100%;
+}
+.final h2 {
+     padding-top: 0;
+     margin-top: 0;
+     padding-bottom: 200px;
+     padding-right: 300px;
+}
+.final span {
+     border-radius: 50%;
+     border: 1px solid rgb(250, 241, 231);
+     padding: 40px 50px;
+     margin-left: 800px;
+     font-family: 'The Seasons Italic', sans-serif;
+}
+footer img {
+     height: 280px;
+     width: 630px;
+}
+.footer-sec2 {
+     display: flex;
+     flex-direction: column;
+     justify-content: space-between;
+}
+.footer-line {
+     border: 1px solid rgb(250, 241, 231);
+}
+.footer-spans {
+     padding: 10px 70px 10px 0;
+     display: flex;
+     justify-content: space-between;
+}
+.span2 {
+     font-size: 17px;
+}
+
+/******************************************
+/* ADDITIONAL STYLES
+/*******************************************/
+
+@font-face {
+     font-family: 'The Seasons Reg';
+     src: url("Fontspring-DEMO-theseasons-reg.otf");
+}
+@font-face {
+     font-family: 'The Seasons BI';
+     src: url("Fontspring-DEMO-theseasons-bdit.otf");
+}
+@font-face {
+     font-family: 'The Seasons Italic';
+     src: url("Fontspring-DEMO-theseasons-it.otf");
+}
+@font-face {
+     font-family: 'TT Commons';
+     src: url("Fontspring-DEMO-tt_commons_pro_regular.otf");
+}
